@@ -1,0 +1,13 @@
+#Ignore all the python venv stuff
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
+#Ignore the ICDC data model dir
+icdc-model-tool/
+
+#Ignore CRDC-H github
+ccdhmodel/
