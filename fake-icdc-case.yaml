@@ -1,0 +1,11 @@
+program: 
+  Category: "administrative"
+  Assignment: "core"
+  Class: "primary"
+  Color: "black"
+  program_name: "ICDC Testing"
+  program_acronym: "ICDCT"
+  program_short_description: "testing data for ICDC in LinkML"
+  program_full_description: "Yup, longer version of the short description"
+  program_external_url: "https://bento.io"
+  program_sort_order: 1

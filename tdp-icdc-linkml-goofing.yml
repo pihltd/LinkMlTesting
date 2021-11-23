@@ -1,0 +1,76 @@
+id: https://made-up.something.com
+name: personinfo
+prefixes:                                 
+  linkml: https://w3id.org/linkml/
+imports:
+  - linkml:types
+default_range: string
+classes:
+  Nodes:
+  Tag:
+  Category:
+    is_a: Tag
+    range: category_status
+  Assignment:
+    is_a: Tag
+    range: assignment_status
+  Class:
+    is_a: Tag
+    range: class_tags
+  Color:
+    is_a: Tag
+    range: color_tags
+
+program:
+  is_a: Nodes
+  slots:
+    - program_name
+    - program_acronym
+    - program_short_description
+    - program_full_description
+    - program_external_url
+    - program_sort_order
+
+slots:
+  program_name:
+    description: The name of the program under which related studies will be grouped, in full text and unabbreviated form, exactly as it will be displayed within the UI
+    required: true
+    slot_uri: Internally-curated
+  program_acronym:
+    description: The name of the program under which related studies will be grouped, expressed in the form of the acronym by which it will identified within the UI
+    required: true
+    slot_uri: Internally-curated
+  program_short_description:
+    description: An abbreviated, single sentence description of the program
+    required: true
+    slot_uri: Internally-curated
+  program_full_description:
+    description: A more detailed, multiple sentence description of the program
+    required: true
+    slot_uri: Internally-curated
+  program_external_url:
+    description: The external url to which users should be directed in order to learn more about the program
+    slot_uri: Internally-curated
+  program_sort_order:
+    description: An arbitrarily-assigned value used to dictate the order in which programs are displayed within the UI
+    range: integer
+    slot_uri: Internally-curated
+
+enums:
+  class_tags:
+    permissible_values:
+      primary:
+      secondary:
+  category_status:
+    permissible_values:
+      administrative:
+      study:
+  assignment_status:
+    permissible_values:
+      core:
+      extended:
+  color_tags:
+    permissible_values:
+      black:
+  
+  
